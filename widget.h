@@ -3,11 +3,15 @@
 
 #include <QWidget>
 
-class Widget : public QWidget {
-  Q_OBJECT
+#include "web.h"
 
- public:
-  Widget(QWidget *parent = nullptr);
-  ~Widget();
+class Widget : public QWidget {
+    Q_OBJECT
+public:
+    Widget(QWidget *parent = nullptr);
+    ~Widget();
+
+private:
+    Web *web;
 };
 #endif  // WIDGET_H
